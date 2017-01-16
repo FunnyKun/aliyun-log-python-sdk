@@ -19,7 +19,7 @@ http://pypi.python.org/pypi/simplejson/
 import sys
 try:
     from setuptools import setup
-except ImportError:
+except :
     from distutils.core import setup
 
 if float("%d.%d" % sys.version_info[:2]) < 2.6 or float("%d.%d" % sys.version_info[:2]) >= 3.0:
